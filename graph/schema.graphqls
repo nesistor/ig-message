@@ -1,0 +1,10 @@
+# GraphQL schema for Instagram "Like"
+type Like {
+  userID: String!
+  timestamp: String!
+}
+
+# Root Query type
+type Query {
+  getInstagramLikes(userID: String!): [Like]   # Query to get likes
+}
